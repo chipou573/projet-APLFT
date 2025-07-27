@@ -1,6 +1,7 @@
 // src/pages/Activities.jsx
 
 import React from "react";
+import pexel6 from '../assets/pexel6.jpg';  // Import de l'image
 
 export default function Activities() {
   return (
@@ -9,7 +10,7 @@ export default function Activities() {
       <div
         className="relative text-white rounded-lg shadow mb-20 flex items-center justify-center text-center h-96 md:h-[500px] lg:h-[600px]"
         style={{
-          backgroundImage: `url('/src/assets/pexel6.jpg')`,
+          backgroundImage: `url(${pexel6})`,  // Utilisation de l'image importée
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
