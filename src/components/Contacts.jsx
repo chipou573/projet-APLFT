@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa'
-import contacts from '../assets/logo.png' 
+import contacts from '../assets/logo.webp' 
 
 export default function ContactsSection() {
   return (

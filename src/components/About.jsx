@@ -1,6 +1,6 @@
-import React from "react";
-import teamPhoto from "../assets/bureau.jpg";
-import heroBackground from "../assets/immmm.jpg";
+import React, { useEffect } from "react";
+import teamPhoto from "../assets/bureau.webp";
+import heroBackground from "../assets/immmm.webp";
 
 const content = {
   hero: {
@@ -95,11 +95,10 @@ const content = {
         bio: "Experte en communication, mène les campagnes de sensibilisation.",
       },
       {
-  name: "Mr Ndoletar Luc",
-  role: "Chargé des programmes, études et projets de l'APLFT",
-  bio: "Responsable de la facilitation des formations et de la coordination des projets au sein de l'association.",
-}
-
+        name: "Mr Ndoletar Luc",
+        role: "Chargé des programmes, études et projets de l'APLFT",
+        bio: "Responsable de la facilitation des formations et de la coordination des projets au sein de l'association.",
+      }
     ],
   },
   achievements: {
@@ -156,6 +155,14 @@ const ContentBlock = ({ title, description, items }) => (
 );
 
 export default function About() {
+  // Préchargement des images pour un affichage rapide
+  useEffect(() => {
+    [heroBackground, teamPhoto].forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
   return (
     <>
       {/* Hero */}
@@ -206,10 +213,11 @@ export default function About() {
       {/* Team */}
       <section className="max-w-6xl mx-auto px-4 py-16">
         <img
-  src={teamPhoto}
-  alt="Équipe APLFT"
-  className="mx-auto mb-8 rounded-lg shadow-lg max-h-[600px] w-full max-w-4xl object-cover"
-/>
+          src={teamPhoto}
+          alt="Équipe APLFT"
+          className="mx-auto mb-8 rounded-lg shadow-lg max-h-[600px] w-full max-w-4xl object-cover"
+          loading="eager"
+        />
         <h2 className="text-3xl font-bold mb-8 text-blue-800 text-center">
           {content.team.title}
         </h2>

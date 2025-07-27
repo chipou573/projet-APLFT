@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Facebook, Linkedin, Twitter } from "lucide-react";
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.webp';
 
 export default function Footer() {
   const [email, setEmail] = useState("");
