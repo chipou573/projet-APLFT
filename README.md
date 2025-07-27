@@ -1,12 +1,40 @@
-# React + Vite
+# 🌍 APLFT – Association pour la Promotion des Libertés Fondamentales au Tchad
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet est un site web développé avec **React.js** pour promouvoir les actions, valeurs, objectifs et actualités de l'APLFT. Il vise à informer le public et à valoriser l’engagement de l’organisation dans la défense des droits humains au Tchad.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Fonctionnalités
 
-## Expanding the ESLint configuration
+- 💡 Présentation claire de la vision, mission, valeurs et objectifs spécifiques
+- 📰 Section Actualités & Événements
+- 🖼️ Galerie d’images avec descriptions
+- 🎯 Appels à l’action : "Découvrir nos actions", "Nous contacter"
+- 📱 Design responsive (mobile, tablette, desktop)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Technologies utilisées
+
+- ⚛️ React.js (Vite)
+- 💨 Tailwind CSS
+- 📸 Import d’images locales
+- 🗂️ Routing basique
+- 🔗 Git + GitHub
+
+---
+
+## 📁 Arborescence principale
+
+```bash
+aplft/
+├── public/
+├── src/
+│   ├── assets/              # Images utilisées dans le site
+│   ├── components/
+│   │   └── Home.jsx         # Composant principal
+│   └── App.jsx              # Entrée principale
+├── index.html
+├── package.json
+└── README.md
+
